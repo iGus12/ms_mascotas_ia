@@ -30,7 +30,7 @@ public class MascotaIAController {
             String etiquetas = iaService.analizarImagen(imagenBytes);
 
             // 3. Devolvemos la respuesta con el texto actualizado
-            return ResponseEntity.ok().body("La IA detectó las siguientes características: " + etiquetas);
+            return ResponseEntity.ok(etiquetas);
 
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
