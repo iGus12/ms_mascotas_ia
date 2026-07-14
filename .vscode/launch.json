@@ -1,21 +1,15 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "java",
-            "name": "Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "MsMascotasIaApplication",
-            "request": "launch",
-            "mainClass": "cl.sanosysalvo.ms_mascotas_ia.MsMascotasIaApplication",
-            "projectName": "ms_mascotas_ia",
-            "env": {
-                "GEMINI_API_KEY": "AQ.Ab8RN6L3T5l29vKZ1Iot-dZnMOWKCzH39Gl2MPhk6JdhoE6Gmg"
-            }
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "MsMascotasIaApplication",
+      "request": "launch",
+      "mainClass": "cl.sanosysalvo.ms_mascotas_ia.MsMascotasIaApplication",
+      "projectName": "ms_mascotas_ia",
+      "env": {
+        "GEMINI_API_KEY": "${env:GEMINI_API_KEY}"
+      }
+    }
+  ]
 }
